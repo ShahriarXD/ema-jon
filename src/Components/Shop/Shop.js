@@ -2,6 +2,8 @@ import React from 'react';
 import './Shop.css'
 import fakeData from '../../fakeData';
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 
 const Shop = () => {
   var target = "_blank"
@@ -16,10 +18,13 @@ const Shop = () => {
             return (
               <div className="stylerbaby" key={product.id}>
                 <h2>{product.name}</h2>
+                <p>Category : {product.category}</p>
+                <p>By : {product.seller}</p>
+                <p>Rating {product.star}/5 ({product.starCount} user review)</p>
                 <p id="price">Price : {product.price}$
-                  <a href={product.url} target={target}><br /><button>Buy Now</button></a>
+                  <a href={product.url} target={target}><br /><button className="button" ><FontAwesomeIcon icon={faCartPlus} /> add item to cart</button></a>
                 </p>
-                <p id="stock">Available Stock : {product.stock}</p>
+                <p id="stock">Only <span id="stock-left">{product.stock}</span> Items Avaiable Stock.</p>
                 <img src={product.img} alt="" />
               </div>
             );

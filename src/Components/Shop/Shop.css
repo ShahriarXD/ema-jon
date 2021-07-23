@@ -18,3 +18,11 @@
   margin: 2%;
   padding: 50px;
 }
+#stock-left{
+  color: #ff0000;
+}
+.button{
+  background-color: rgb(202, 143, 32);
+  padding: 10px;
+  border-radius: 20px;
+}
