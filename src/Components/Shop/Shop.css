@@ -1,16 +1,8 @@
-.stylerbaby{
-  font-size: 12px;
-  border: 2px solid #ccc;
-  margin: 50px;
-  padding: 0 7px 0 7px;
-  border-radius: 10px;
-
+.container{
+  width: 60%;
+  float: left;
+  border-right: 2px solid gray;
 }
-.text{
-  text-align: center;
-  color: brown;
-}
-
 #price{
   font-size: 30px;
   color: #ff0000; 
@@ -18,4 +10,11 @@
 #stock{
   font-size: 18px;
   font-family: sans-serif;
+}
+.stylerbaby{
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 12px;
+  margin: 2%;
+  padding: 50px;
 }
