@@ -1,0 +1,21 @@
+.stylerbaby{
+  font-size: 12px;
+  border: 2px solid #ccc;
+  margin: 50px;
+  padding: 0 7px 0 7px;
+  border-radius: 10px;
+
+}
+.text{
+  text-align: center;
+  color: brown;
+}
+
+#price{
+  font-size: 30px;
+  color: #ff0000; 
+}
+#stock{
+  font-size: 18px;
+  font-family: sans-serif;
+}
