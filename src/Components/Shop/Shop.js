@@ -6,9 +6,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 
 const Shop = () => {
-  var target = "_blank"
   // const data10 = fakeData.slice(0, 10);
   const [products, setProducts] = useState(fakeData);
+  // Cart Section
+  const handleAddProduct = (producter) => {
+    console.log('Add Product', producter);
+  }
   return (
     <div>
       {/* THIS IS THE Product */}
@@ -22,7 +25,7 @@ const Shop = () => {
                 <p>By : {product.seller}</p>
                 <p>Rating {product.star}/5 ({product.starCount} user review)</p>
                 <p id="price">Price : {product.price}$
-                  <a href={product.url} target={target}><br /><button className="button" ><FontAwesomeIcon icon={faCartPlus} /> add item to cart</button></a>
+                  <br /><button className="button" onClick={() => handleAddProduct(product.price)}><FontAwesomeIcon icon={faCartPlus} /> add item to cart</button>
                 </p>
                 <p id="stock">Only <span id="stock-left">{product.stock}</span> Items Avaiable Stock.</p>
                 <img src={product.img} alt="" />
